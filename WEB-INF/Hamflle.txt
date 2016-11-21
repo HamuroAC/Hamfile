@@ -1,0 +1,9 @@
+set names utf8;
+
+drop database if exists Hamfile;
+create database Hamfile;
+
+grant all privileges on Ham.* to kunugi@localhost identified by 'hamuro';
+use Hamfile;
+
+create table person(id char(32) primary key,name char(32),name char(32),imgpath char(256));
