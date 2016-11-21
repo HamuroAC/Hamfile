@@ -12,37 +12,37 @@
 <body>
   <!-- ナビゲーションバー -->
   <nav class="demo imponent">
-    <a href="#" class="brand">
+    <a href="index.html" class="brand">
       <span class="logo">🍉Hamfile</span>
     </a>
     <div class="menu">
-      <a href="login.html" class="button">Login</a>
+      <!-- メニューなし -->
     </div>
   </nav>
   <!-- コンテンツ -->
   <div class="flex one contents">
     <span class="fl1">
       <article class="card">
-        <header><h3>ログインフォーム</h3></header>
+        <header><h3>ログイン</h3></header>
         <section>
-          <h3>💌Email</h3>
+          <h3>💌メールアドレス</h3>
           <input type="text" placeholder="yourmail@example.com">
           
-          <h3>🔑Password</h3>
+          <h3>🔑パスワード</h3>
           <input type="password" placeholder="Password">
-          <label class="policy">
+          <label class="checkbox_mg">
             <input type="checkbox">
             <span class="checkable">パスワードを記憶する</span>
           </label>
-          <button class="full add_account">ログイン</button>
+          <a class="button full add_account_button" href="profile.jsp">ログイン</a>
         </section>
       </article>
     </span>
   </div>
   <!-- フッター -->
   <footer>
-    <div class="line"></div>
-    <p class="hamuro">@はむろの残留意思<br><a href="https://github.com/HamuroAC">GitHub</a></p>
+    <div class="footer_line"></div>
+    <p class="footer_p">@はむろの残留意思<br><a href="https://github.com/HamuroAC">GitHub</a></p>
   </footer>
 </body>
 
