@@ -20,17 +20,34 @@
       <a href="login.jsp" class="button">ログインはこちら</a>
     </div>
   </nav>
+  
   <!-- コンテンツ -->
   <div class="flex two contents">
-    <span>
-      <article class="card">
-        <header><h3>なんかHamfileの紹介</h3></header>
-        <section>
-          <p>なんかイラスト付きで紹介</p>
-          <p>hogehoge</p>
-          <img src="img/question.png" style="width:256px;">
-        </section>
-      </article>
+  <span>
+    <div class="tabs four">
+      <input id="tabC-1" type='radio' name='tabGroupC' checked >
+      <input id="tabC-2" type='radio' name='tabGroupC'>
+      <input id="tabC-3" type='radio' name='tabGroupC'>
+      <input id="tabC-4" type='radio' name='tabGroupC'>
+      <div class='row'>
+      <div>
+        <img src="img/Logo_Black400.png">
+      </div>
+    <div>
+      <img src="img/Logo_Blue200.png">
+    </div>
+    <div>
+      <img src="img/Logo_White400.png">
+    </div>
+    <div>
+      <img src="img/Logo400.png">
+    </div>
+  </div>
+  <label for="tabC-1"><span class="pseudo button Description">1</span></label>
+  <label for="tabC-2"><span class="pseudo button Description">2</span></label>
+  <label for="tabC-3"><span class="pseudo button Description">3</span></label>
+  <label for="tabC-4"><span class="pseudo button Description">4</span></label>
+</div>
     </span>
     <span>
       <article class="card">
@@ -44,16 +61,17 @@
           <label class="checkbox_mg">
             <input type="checkbox">
             <span class="checkable"> <a href="#">利用規約</a>に同意する</span>
-          </label>
-          <a class="button full add_account_button" href="edit.jsp">アカウント作成</a>
-        </section>
-      </article>
+    </label>
+    <a class="button full add_account_button" href="edit.jsp">アカウント作成</a>
+    </section>
+    </article>
     </span>
   </div>
   <!-- フッター -->
   <footer>
     <div class="footer_line"></div>
-    <p class="footer_p">@はむろの残留意思<br><a href="https://github.com/HamuroAC">GitHub</a></p>
+    <p class="footer_p">@はむろの残留意思
+      <br><a href="https://github.com/HamuroAC">GitHub</a></p>
   </footer>
 </body>
 
