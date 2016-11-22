@@ -66,6 +66,12 @@ nav.imponent {
 	max-width:400px;
 	max-height:400px;
 }
+.card_form{
+	height: 25.2em;
+}
+.add_form_header3 {
+	margin: 13px 0px;
+}
 /*■■■■■■■■■■■■■■■ login ■■■■■■■■■■■■■■■*/
 /*■■■■■■■■■■■■■■■ profile ■■■■■■■■■■■■■■■*/
 .contents_profile{
@@ -80,6 +86,7 @@ nav.imponent {
   margin: 0 auto;        /* Center horizontally */
   width: 60%;            /* 60% width */
 }
+
 /*■■■■■■■■■■■■■■■ edit ■■■■■■■■■■■■■■■*/
 .miniprofile {
   border-radius: 50%;    /* Make it a circle */
