@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="css/picnic.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
   <script type="text/javascript" src="script/script.js"></script>
+  <link rel="shortcut icon" href="img/Logoico.ico">
 </head>
 
 <body>
   <!-- ナビゲーションバー -->
   <nav class="demo imponent">
     <a href="index.html" class="brand">
-      <span class="logo">🍉Hamfile</span>
+      <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
     </a>
     <div class="menu">
       <!-- メニューなし -->

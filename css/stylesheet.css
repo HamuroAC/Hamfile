@@ -36,7 +36,11 @@ nav.imponent {
 .footer_p {
 	text-align: center;
 }
-
+.title_logo{
+  position: relative;
+  bottom: 5px;
+  width: 80px;
+}
 
 /*■■■■■■■■■■■■■■■ index ■■■■■■■■■■■■■■■*/
 .add_account_button
