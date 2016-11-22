@@ -49,6 +49,22 @@ nav.imponent {
 }
 .Description{
   width: 24%;
+	border : 1px solid black;
+}
+.Description:hover{
+	border : 1px solid black;
+}
+.desimg_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.desimg {
+	position: relative;
+	width:auto;
+	height:auto;
+	max-width:400px;
+	max-height:400px;
 }
 /*■■■■■■■■■■■■■■■ login ■■■■■■■■■■■■■■■*/
 /*■■■■■■■■■■■■■■■ profile ■■■■■■■■■■■■■■■*/
