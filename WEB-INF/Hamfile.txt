@@ -6,7 +6,7 @@ create database Hamfile;
 grant all privileges on Ham.* to kunugi@localhost identified by 'hamuro';
 use Hamfile;
 
-create table person(id char(32) primary key,name char(32),imgpath char(255));
+create table person(id char(32) primary key,name char(32),imgpath char(255),image blob);
 
 insert into person(id,name)
 		values("HAMURO_IS_GOD","REI HAMURO");
