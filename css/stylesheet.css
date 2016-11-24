@@ -2,13 +2,14 @@
 body{
   font-family: "メイリオ", sans-serif;
   padding: 10px;
+  background-color: #49c976;
 }
 
 nav.imponent {
   padding: 1em 0;
   font-size: 20px;
   box-shadow: 1px 1px 11px rgba(0,0,0,0.9);
-	background-color: #fff;
+	background-color: #242424;
 }
 
 .imponent .logo {
@@ -17,6 +18,7 @@ nav.imponent {
   font-size: 30px;
   transition: all 0.3s;
 	top: 5px;
+  color: white;
 }
 .logo:hover{
   transition: all 0.3s;
