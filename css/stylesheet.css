@@ -8,7 +8,7 @@ nav.imponent {
   padding: 1em 0;
   font-size: 20px;
   box-shadow: 1px 1px 11px rgba(0,0,0,0.9);
-	background-color: #c4ffc6;
+	background-color: #fff;
 }
 
 .imponent .logo {
@@ -75,6 +75,11 @@ nav.imponent {
 	margin: 13px 0px;
 }
 /*■■■■■■■■■■■■■■■ login ■■■■■■■■■■■■■■■*/
+.login_card {
+	position: relative;
+	top: 2.6em;
+	height: 23em;
+}
 /*■■■■■■■■■■■■■■■ profile ■■■■■■■■■■■■■■■*/
 .contents_profile{
   margin-top: 8em;
