@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/picnic.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
   <script type="text/javascript" src="script/script.js"></script>
+  <scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
   <link rel="shortcut icon" href="img/Logoico.ico">
 </head>
 
