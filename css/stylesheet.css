@@ -1,0 +1,99 @@
+/*■■■■■■■■■■■■■■■ 共通 ■■■■■■■■■■■■■■■*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body{
+  font-family: 'Noto Sans Japanese', sans-serif;
+  padding: 10px;
+}
+
+nav.imponent {
+  padding: 2em 0;
+  font-size: 20px;
+  box-shadow: 0px 1px 11px rgba(0,0,0,0.9);
+}
+
+.imponent .logo {
+  height: 3em;
+  font-size: 36px;
+  transition: all 0.3s;
+}
+.logo:hover{
+  transition: all 0.3s;
+  color: #0011d9;
+}
+
+.contents{
+  margin-top: 6em;
+}
+
+.checkbox_mg {
+  display: block;
+	margin: 1.5em 0em 1em 0em;
+}
+
+.footer_line {
+	border-top: 0.1em solid black;
+}
+.footer_p {
+	text-align: center;
+}
+.title_logo{
+  position: relative;
+  bottom: 5px;
+  width: 80px;
+}
+
+/*■■■■■■■■■■■■■■■ index ■■■■■■■■■■■■■■■*/
+.add_account_button
+{
+  font-size: 1.5em;
+}
+.Description{
+  width: 24%;
+	border : 1px solid black;
+}
+.Description:hover{
+	border : 1px solid black;
+}
+.desimg_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.desimg {
+	position: relative;
+	width:auto;
+	height:auto;
+	max-width:400px;
+	max-height:400px;
+}
+.card_form{
+	height: 25.2em;
+}
+.add_form_header3 {
+	margin: 13px 0px;
+}
+/*■■■■■■■■■■■■■■■ login ■■■■■■■■■■■■■■■*/
+/*■■■■■■■■■■■■■■■ profile ■■■■■■■■■■■■■■■*/
+.contents_profile{
+  margin-top: 8em;
+}
+.information {
+  font-size: 3vw;        /*vw = view height*/
+}
+.profile_img {
+  display: block;
+  border-radius: 50%;    /* Make it a circle */
+  margin: 0 auto;        /* Center horizontally */
+  width: 60%;            /* 60% width */
+}
+
+/*■■■■■■■■■■■■■■■ edit ■■■■■■■■■■■■■■■*/
+.miniprofile {
+  border-radius: 50%;    /* Make it a circle */
+  margin: 0 auto;        /* Center horizontally */
+  width: 60%;            /* 60% width */
+  padding-bottom: 60%;   /* 60% height */
+}
+.information_edit {
+  font-size: 2.4vw;        /*vw = view height*/
+}
