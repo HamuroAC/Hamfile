@@ -1,3 +1,4 @@
+ <%@page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -21,6 +22,7 @@
     </div>
   </nav>
   <!-- コンテンツ -->
+  <form method="POST" enctype="multipart/form-data" action="./UploadServlet">
   <div class="flex two contents_profile">
     <span>
       <label class="dropimage miniprofile">
@@ -36,9 +38,10 @@
       <!-- なし -->
     </span>
     <span>
-      <a class="button full" href="profile.jsp">決定</a>
+      <input class="full" type="submit" value="決定">
     </span>
   </div>
+  </form>
 </body>
 
 </html>
