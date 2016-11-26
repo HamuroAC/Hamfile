@@ -91,10 +91,12 @@ nav.imponent {
   margin-top: 4em;
 }
 .miniprofile {
+  position: relative;
   border-radius: 50%;    /* Make it a circle */
   margin: 0 auto;        /* Center horizontally */
   width: 60%;            /* 60% width */
   padding-bottom: 60%;   /* 60% height */
+  bottom: 5px;
 }
 .information_edit {
   font-size: 1.25em;
@@ -104,7 +106,9 @@ nav.imponent {
   margin: 0 auto;
 }
 .upload_pic_card{
-  max-height: 450px;
+  height: 445px
+}
+.upload_pic_section{
 }
 /*■■■■■■■■■■■■■■■ privacy_policy ■■■■■■■■■■■■■■■*/
 .policy_card{

@@ -31,7 +31,7 @@
     <span>
        <article class="card upload_pic_card">
       <header><h3>📷Upload New Picture</h3></header>
-      <section>
+      <section class="upload_pic_section">
         <label class="dropimage miniprofile">
         <input name="filea" title="Drop image or click me" type="file">
       </label>
@@ -43,8 +43,6 @@
         <header>基本プロフィール</header>
         <section>
           <h3>名前<input type="text" placeholder="Name"></h3>
-          <h3>???<input type="text" placeholder="???"></h3>
-          <h3>???<input type="text" placeholder="???"></h3>
         </section>
       </article>
     </span>
