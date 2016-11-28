@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/picnic.min.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<script type="text/javascript" src="script/script.js"></script>
+	<scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
 	<link rel="shortcut icon" href="img/Logoico.ico">
 </head>
 
@@ -33,7 +34,7 @@
 		<input id="tabC-4" type='radio' name='tabGroupC'>
 		<div class='row desimg_center'>
 			<div><img class="desimg" src="img/ham_sample1.png"></div>
-			<div><img class="desimg" src="img/Logo_Blue400.png"></div>
+			<div><img class="desimg" src="img/ham_sample2.png"></div>
 			<div><img class="desimg" src="img/Logo_White400.png"></div>
 			<div><img class="desimg" src="img/Logo400.png"></div>
 		</div>
@@ -49,15 +50,17 @@
 	<article class="card card_form">
 		<header><h3>登録フォーム</h3></header>
 		<section>
+		<form action="POST">
 			<h3 class="add_form_header3">💌メールアドレス</h3>
 			<input type="text" placeholder="yourmail@example.com">
 			<h3 class="add_form_header3">🔑パスワード</h3>
 			<input type="password" placeholder="Password">
 			<label class="checkbox_mg">
 				<input type="checkbox">
-				<span class="checkable"> <a href="#">利用規約</a>に同意する</span>
+				<span class="checkable"> <a href="privacy_policy.html">利用規約</a>に同意する</span>
 			</label>
-			<a class="button full add_account_button" href="edit.jsp">アカウント作成</a>
+			<input class="full add_account_button" type="submit" value="アカウント作成">
+		</form>
 		</section>
 	</article>
 </span>
