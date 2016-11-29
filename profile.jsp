@@ -18,11 +18,11 @@
       <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
     </a>
     <div class="menu">
-      HttpSession ses = req.setSession
+    <!--  HttpSession ses = req.setSession
       String id = String ses.GetAtteribute(string id)
-      if(id==null){
-       <a href="login.jsp" class="button">ログイン</a>}else{
-       <a href="edit.jsp" class="button">設定</a>}
+      if(id==null){<!-セッション未実装のためコメントアウト--><!--
+       <a href="login.jsp" class="button">ログイン</a>}else{-->
+       <a href="edit.jsp" class="button">設定</a><!--}-->
     </div>
   </nav>
   <!-- コンテンツ -->
