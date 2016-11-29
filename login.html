@@ -28,6 +28,7 @@
       <article class="card login_card">
         <header><h3>ログイン</h3></header>
         <section>
+         <form action="POST">
           <h3>💌メールアドレス</h3>
           <input type="text" placeholder="yourmail@example.com">
           <h3>🔑パスワード</h3>
@@ -36,7 +37,8 @@
             <input type="checkbox">
             <span class="checkable">パスワードを記憶する</span>
           </label>
-          <a class="button full add_account_button" href="profile.jsp">ログイン</a>
+          <input type="submit" value="ログイン" class="full add_account_button">
+          </form>
         </section>
       </article>
     </span>
