@@ -47,7 +47,7 @@
 
 <!-- 登録フォーム -->
 <span>
-	<article class="card card_form">
+	<article class="card card_form" onSubmit="return check()">
 		<header><h3>登録フォーム</h3></header>
 		<section>
 		<form action="POST">
@@ -56,7 +56,7 @@
 			<h3 class="add_form_header3">🔑パスワード</h3>
 			<input type="password" placeholder="Password">
 			<label class="checkbox_mg">
-				<input type="checkbox">
+				<input type="checkbox" id="p_checkbox" checked>
 				<span class="checkable"> <a href="privacy_policy.html">利用規約</a>に同意する</span>
 			</label>
 			<input class="full add_account_button" type="submit" value="アカウント作成">
