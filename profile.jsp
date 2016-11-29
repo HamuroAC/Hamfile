@@ -18,7 +18,11 @@
       <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
     </a>
     <div class="menu">
-      <a href="edit.jsp" class="button">設定</a>
+      HttpSession ses = req.setSession
+      String id = String ses.GetAtteribute(string id)
+      if(id==null){
+       <a href="login.jsp" class="button">ログイン</a>}else{
+       <a href="edit.jsp" class="button">設定</a>}
     </div>
   </nav>
   <!-- コンテンツ -->
