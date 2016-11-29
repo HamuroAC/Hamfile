@@ -32,7 +32,8 @@
     </span>
     <span>
       <div class="information">
-        <h3>Name : KNGMT</h3>
+        <h3>Name : <jsp:useBean id="user" class="login.LoginUserBean" scope="session" />
+        <jsp:getProperty name="user"  property="name"/></h3>
         <h3>Gender : Male</h3>
         <h3>Location : Nara</h3>
       </div>
