@@ -42,7 +42,7 @@
       <article class="card">
         <header>基本プロフィール</header>
         <section>
-          <h3>名前<input type="text" placeholder="Name"></h3>
+          <h3>名前<input name= "name" type="text" placeholder="Name"></h3>
         </section>
       </article>
     </span>
