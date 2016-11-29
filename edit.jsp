@@ -1,3 +1,4 @@
+<%@page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -7,38 +8,52 @@
   <link rel="stylesheet" href="css/picnic.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
   <script type="text/javascript" src="script/script.js"></script>
+  <scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
   <link rel="shortcut icon" href="img/Logoico.ico">
 </head>
 
 <body>
-  <!-- ナビゲーションバー -->
-  <nav class="demo imponent">
-    <a href="index.html" class="brand">
-      <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
-    </a>
-    <div class="menu">
-      <!-- メニューなし -->
-    </div>
-  </nav>
-  <!-- コンテンツ -->
+
+<!-- ナビゲーションバー -->
+<nav class="demo imponent">
+  <a href="index.html" class="brand">
+    <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
+  </a>
+  <!-- メニュー -->
+  <div class="menu">
+    <!-- 追加する場合はここに記述 -->
+  </div>
+</nav>
+
+<!-- コンテンツ -->
+<form method="POST" enctype="multipart/form-data" action="./UploadServlet">
   <div class="flex two contents_profile">
     <span>
-      <label class="dropimage miniprofile">
+       <article class="card upload_pic_card">
+      <header><h3>📷Upload New Picture</h3></header>
+      <section class="upload_pic_section">
+        <label class="dropimage miniprofile">
         <input name="filea" title="Drop image or click me" type="file">
       </label>
+      </section>
+      </article>
     </span>
     <span class="information_edit">
-      <h3><input type="text" placeholder="Name"></h3>
-      <h3><input type="text" placeholder="Gender"></h3>
-      <h3><input type="text" placeholder="Location"></h3>
+      <article class="card">
+        <header>基本プロフィール</header>
+        <section>
+          <h3>名前<input type="text" placeholder="Name"></h3>
+        </section>
+      </article>
     </span>
     <span>
       <!-- なし -->
     </span>
     <span>
-      <a class="button full" href="profile.jsp">決定</a>
+      <input class="full add_profile_btn" type="submit" value="決定">
     </span>
   </div>
-</body>
+</form>
 
+</body>
 </html>

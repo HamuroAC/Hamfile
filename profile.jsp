@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/picnic.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
   <script type="text/javascript" src="script/script.js"></script>
+  <scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
   <link rel="shortcut icon" href="img/Logoico.ico">
 </head>
 
@@ -33,6 +34,16 @@
       </div>
     </span>
   </div>
+    <div class="flex two center demo">
+    I'd like to
+    </div>
+  <div class="flex two center demo">
+  <div><span>🍳中華料理</span></div>
+  <div><span>💻プログラミング</span></div>
+  <div><span></span></div>
+  <div><span>4</span></div>
+  <div><span>5</span></div>
+</div>
   <!-- フッター -->
 </body>
 

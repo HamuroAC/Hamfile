@@ -1,45 +1,42 @@
 /*■■■■■■■■■■■■■■■ 共通 ■■■■■■■■■■■■■■■*/
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 body{
-  font-family: 'Noto Sans Japanese', sans-serif;
+  font-family: "メイリオ", sans-serif;
   padding: 10px;
+  background-color: #49c976;
 }
 
 nav.imponent {
-  padding: 2em 0;
+  padding: 1em 0;
   font-size: 20px;
-  box-shadow: 0px 1px 11px rgba(0,0,0,0.9);
+  box-shadow: 1px 1px 11px rgba(0,0,0,0.9);
+	background-color: #242424;
 }
 
 .imponent .logo {
+	position: relative;
   height: 3em;
-  font-size: 36px;
+  font-size: 30px;
   transition: all 0.3s;
+	top: 5px;
+  color: white;
 }
 .logo:hover{
   transition: all 0.3s;
-  color: #0011d9;
+  color: #318FE0;
 }
 
 .contents{
-  margin-top: 6em;
+  margin-top: 4em;
 }
 
 .checkbox_mg {
   display: block;
 	margin: 1.5em 0em 1em 0em;
 }
-
-.footer_line {
-	border-top: 0.1em solid black;
-}
-.footer_p {
-	text-align: center;
-}
 .title_logo{
   position: relative;
-  bottom: 5px;
-  width: 80px;
+  bottom: 4px;
+  width: 70px;
 }
 
 /*■■■■■■■■■■■■■■■ index ■■■■■■■■■■■■■■■*/
@@ -48,11 +45,8 @@ nav.imponent {
   font-size: 1.5em;
 }
 .Description{
-  width: 24%;
-	border : 1px solid black;
-}
-.Description:hover{
-	border : 1px solid black;
+	text-align: center;
+  width: 23%;
 }
 .desimg_center {
 	display: block;
@@ -63,20 +57,25 @@ nav.imponent {
 	position: relative;
 	width:auto;
 	height:auto;
-	max-width:400px;
-	max-height:400px;
+	max-width:500px;
+	max-height:500px;
 }
 .card_form{
+	position: relative;
+	top: 2.6em;
 	height: 25.2em;
+	margin: 0px 10px;
 }
 .add_form_header3 {
 	margin: 13px 0px;
 }
 /*■■■■■■■■■■■■■■■ login ■■■■■■■■■■■■■■■*/
-/*■■■■■■■■■■■■■■■ profile ■■■■■■■■■■■■■■■*/
-.contents_profile{
-  margin-top: 8em;
+.login_card {
+	position: relative;
+	top: 2.6em;
+	height: 23em;
 }
+/*■■■■■■■■■■■■■■■ profile ■■■■■■■■■■■■■■■*/
 .information {
   font-size: 3vw;        /*vw = view height*/
 }
@@ -88,12 +87,29 @@ nav.imponent {
 }
 
 /*■■■■■■■■■■■■■■■ edit ■■■■■■■■■■■■■■■*/
+.contents_profile{
+  margin-top: 4em;
+}
 .miniprofile {
+  position: relative;
   border-radius: 50%;    /* Make it a circle */
   margin: 0 auto;        /* Center horizontally */
   width: 60%;            /* 60% width */
   padding-bottom: 60%;   /* 60% height */
+  bottom: 5px;
 }
 .information_edit {
-  font-size: 2.4vw;        /*vw = view height*/
+  font-size: 1.25em;
 }
+.add_profile_btn{
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+.upload_pic_card{
+  height: 445px;
+}
+.upload_pic_section{
+}
+/*■■■■■■■■■■■■■■■ privacy_policy ■■■■■■■■■■■■■■■*/
+.policy_card{
+  margin: 10px 100px;}
