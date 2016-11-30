@@ -10,8 +10,7 @@ import java.sql.SQLException;
  */
 public class LoginDB extends Login {
 
-    @Override
-    public LoginUserBean getUserData(String id, String name) {
+    public LoginUserBean getUserData(String id, String password) {
         LoginUserBean bean = null;
         LoginDao dao = null;
         ResultSet rs;
@@ -20,19 +19,18 @@ public class LoginDB extends Login {
             // DAOクラスをインスタンス化
             dao = new LoginDao();
             // 画面で入力されたIDとパスワードを基にDB検索を実行
-            rs = dao.selectUser(id, name);
+            rs = dao.selectUser(id, password);
 
             while (rs.next()) {
                 /*検索結果が存在する場合はbeanに値をセット
                  （結果が1件しか返らないことを想定）
                  */
-                bean = new LoginUserBean();
+                 bean = new LoginUserBean();
                 // ID（IDは引数のものをセット）
                 bean.setId(id);
                 // 名前
                 bean.setName(rs.getString("name"));
             }
-
         } catch (SQLException sqle) {
             sqle.printStackTrace();
         } finally {
