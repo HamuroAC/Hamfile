@@ -22,6 +22,7 @@
     </div>
   </nav>
   <!-- コンテンツ -->
+  <form method="POST" enctype="multipart/form-data" action="./LoginServlet">
   <div class="flex four contents">
    <span></span>
     <span class="fl1 half">
@@ -30,9 +31,9 @@
         <section>
          <form action="POST">
           <h3>💌メールアドレス</h3>
-          <input type="text" placeholder="yourmail@example.com">
+          <input name = "name" type="text" placeholder="yourmail@example.com">
           <h3>🔑パスワード</h3>
-          <input type="password" placeholder="Password">
+          <input name = "password" type="password" placeholder="Password">
           <label class="checkbox_mg">
             <input type="checkbox">
             <span class="checkable">パスワードを記憶する</span>
@@ -44,6 +45,7 @@
     </span>
     <span></span>
   </div>
+  </form>
 </body>
 
 </html>
