@@ -14,31 +14,31 @@ import java.io.Serializable;
 public class LoginUserBean implements Serializable {
     private static final long serialVersionUID = 1L;
     
-    private String id_;
-    private String name_;
+    private String id;
+    private String name;
 
     public LoginUserBean() {
-        this.id_ = "";
-        this.name_ = "";
+        this.id = "";
+        this.name = "";
     }
     
     public LoginUserBean(String id, String name) {
-        this.id_ = id;
-        this.name_ = name;
+        this.id = id;
+        this.name = name;
     }
     
     public void setId(String id){
-        this.id_ = id;
+        this.id = id;
     }
     public String getId(){
-        return this.id_;
+        return this.id;
     }
     
     public void setName(String name){
-        this.name_ = name;
+        this.name = name;
     }
     public String getName(){
-       return this.name_;
+       return this.name;
     }
     
 }
