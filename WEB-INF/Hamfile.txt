@@ -8,5 +8,5 @@ use Hamfile;
 
 create table person(id char(32) primary key, password char(60), name char(32),imagepath char(255));
 
-insert into person(id,name)
-		values("HAMURO_IS_GOD","REI HAMURO");
+insert into person(id, password, name)
+		values("HAMURO","GOD","REI HAMURO");
