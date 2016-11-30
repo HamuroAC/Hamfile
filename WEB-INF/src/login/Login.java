@@ -12,26 +12,17 @@ public class Login {
 	 * @param pass	パスワード
 	 * @return ユーザ情報
 	 */
-	public LoginUserBean getUserData(String id, String name) {
+	public LoginUserBean getUserData(String id, String password) {
 		LoginUserBean bean = new LoginUserBean();
 		
 		// 引数のIDとパスワードを判定
-		if("web01".equals(id) && "name".equals(name)) {		
-			// IDがweb01の場合
-			// BeanにIDを設定
-			bean.setId(id);
-			// Beanに名前を設定
-			bean.setName("すく太郎");	
-		} else if ("web02".equals(id) && "name".equals(name)) {
-			// IDがweb02の場合
-			// BeanにIDを設定
-			bean.setId(id);
-			// Beanに名前を設定
-			bean.setName("すく次郎");
-			
-		} else {
+		if(id == null || id.equals("") || password == null || password.equals("")) {
 			// IDが合致しない場合はnullを代入
 			bean = null;
+			
+		} else {
+
+			bean.setId(id);
 		}
 		return bean;
 	}
