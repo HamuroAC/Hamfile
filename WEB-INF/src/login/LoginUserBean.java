@@ -7,10 +7,6 @@ package login;
 
 import java.io.Serializable;
 
-/**
- *
- * @author nabana
- */
 public class LoginUserBean implements Serializable {
     private static final long serialVersionUID = 1L;
     
@@ -22,7 +18,7 @@ public class LoginUserBean implements Serializable {
         this.name = "";
     }
     
-    public LoginUserBean(String id, String name) {
+    public LoginUserBean(String id, String password) {
         this.id = id;
         this.name = name;
     }
