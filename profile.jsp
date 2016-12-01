@@ -26,7 +26,7 @@
       String id = String ses.GetAtteribute(string id)
       if(id==null){<!-セッション未実装のためコメントアウト--><!--
        <a href="login.jsp" class="button">ログイン</a>}else{-->
-       <a href="edit.jsp" class="button">設定</a><!--}-->
+       <a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> 編集</a><!--}-->
     </div>
   </nav>
   <!-- コンテンツ -->
@@ -36,10 +36,8 @@
     </span>
     <span>
       <div class="information">
-        <h3>Name : 
-        <jsp:getProperty property="name" name="user_db"/></h3>
-        <h3>Gender : Male</h3>
-        <h3>Location : Nara</h3>
+        <h4><i class="fa fa-user"></i> Name : 
+        <jsp:getProperty property="name" name="user_db"/></h4>
       </div>
     </span>
   </div>

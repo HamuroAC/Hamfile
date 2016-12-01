@@ -113,3 +113,8 @@ nav.imponent {
 /*■■■■■■■■■■■■■■■ privacy_policy ■■■■■■■■■■■■■■■*/
 .policy_card{
   margin: 10px 100px;}
+
+/*Font Awesome*/
+input[type=submit]{
+  font-family: FontAwesome;
+}

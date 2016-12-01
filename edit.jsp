@@ -31,7 +31,7 @@
   <div class="flex two contents_profile">
     <span>
        <article class="card upload_pic_card">
-      <header><h3>📷Upload New Picture</h3></header>
+      <header><h3><i class="fa fa-camera"></i> Upload New Picture</h3></header>
       <section class="upload_pic_section">
         <label class="dropimage miniprofile">
         <input name="filea" title="Drop image or click me" type="file">
@@ -41,9 +41,9 @@
     </span>
     <span class="information_edit">
       <article class="card">
-        <header>基本プロフィール</header>
+        <header><i class="fa fa-pencil-square-o"></i> 基本プロフィール</header>
         <section>
-          <h3>名前<input name= "name" type="text" placeholder="Name"></h3>
+          <h4><i class="fa fa-user"></i> 名前<input name= "name" type="text" placeholder="Name"></h4>
         </section>
       </article>
     </span>
@@ -51,7 +51,7 @@
       <!-- なし -->
     </span>
     <span>
-      <input class="full add_profile_btn" type="submit" value="決定">
+      <input class="full add_profile_btn" type="submit" value="&#xf046; 決定">
     </span>
   </div>
 </form>
