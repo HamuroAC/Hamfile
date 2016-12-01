@@ -15,33 +15,37 @@
   <!-- ナビゲーションバー -->
   <nav class="demo imponent">
     <a href="index.html" class="brand">
-      <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
+      <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
     </a>
     <div class="menu">
       <!-- メニューなし -->
     </div>
   </nav>
   <!-- コンテンツ -->
+  <form method="POST" action="./LoginServlet">
   <div class="flex four contents">
    <span></span>
     <span class="fl1 half">
       <article class="card login_card">
         <header><h3>ログイン</h3></header>
         <section>
+         <form action="POST">
           <h3>💌メールアドレス</h3>
-          <input type="text" placeholder="yourmail@example.com">
+          <input name = "id" type="text" placeholder="yourmail@example.com">
           <h3>🔑パスワード</h3>
-          <input type="password" placeholder="Password">
+          <input name = "password" type="password" placeholder="Password">
           <label class="checkbox_mg">
             <input type="checkbox">
             <span class="checkable">パスワードを記憶する</span>
           </label>
-          <a class="button full add_account_button" href="profile.jsp">ログイン</a>
+          <input name = "submit" type="submit" value="ログイン" class="full add_account_button">
+          </form>
         </section>
       </article>
     </span>
     <span></span>
   </div>
+  </form>
 </body>
 
 </html>

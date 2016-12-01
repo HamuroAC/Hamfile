@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<jsp:useBean id="user_db" scope="session" class="login.LoginUserBean" />
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -15,10 +18,14 @@
   <!-- ナビゲーションバー -->
   <nav class="demo imponent">
     <a href="index.html" class="brand">
-      <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
+      <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
     </a>
     <div class="menu">
-      <a href="edit.jsp" class="button">設定</a>
+    <!--  HttpSession ses = req.setSession
+      String id = String ses.GetAtteribute(string id)
+      if(id==null){<!-セッション未実装のためコメントアウト--><!--
+       <a href="login.jsp" class="button">ログイン</a>}else{-->
+       <a href="edit.jsp" class="button">設定</a><!--}-->
     </div>
   </nav>
   <!-- コンテンツ -->
@@ -28,7 +35,8 @@
     </span>
     <span>
       <div class="information">
-        <h3>Name : KNGMT</h3>
+        <h3>Name : 
+        <jsp:getProperty property="name" name="user_db"/></h3>
         <h3>Gender : Male</h3>
         <h3>Location : Nara</h3>
       </div>

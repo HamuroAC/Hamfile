@@ -17,7 +17,7 @@
 <!-- ナビゲーションバー -->
 <nav class="demo imponent">
   <a href="index.html" class="brand">
-    <span class="logo"><img class="title_logo" src="img/Logo200.png" alt="logo">Hamfile</span>
+    <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
   </a>
   <!-- メニュー -->
   <div class="menu">
@@ -42,7 +42,7 @@
       <article class="card">
         <header>基本プロフィール</header>
         <section>
-          <h3>名前<input type="text" placeholder="Name"></h3>
+          <h3>名前<input name= "name" type="text" placeholder="Name"></h3>
         </section>
       </article>
     </span>
