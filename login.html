@@ -14,14 +14,18 @@
 
 <body>
   <!-- ナビゲーションバー -->
-  <nav class="demo imponent">
-    <a href="index.html" class="brand">
-      <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
-    </a>
-    <div class="menu">
-      <!-- メニューなし -->
-    </div>
-  </nav>
+<nav class="demo imponent">
+  <a href="index.html" class="brand">    <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
+	</a>
+
+	<!-- レスポンシブ -->
+	<input id="bmenub" type="checkbox" class="show">
+	<label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
+	
+	<div class="menu">
+		<a href="login.html" class="button"><i class="fa fa-share"></i> 戻る</a>
+	</div>
+</nav>
   <!-- コンテンツ -->
   <form method="POST" action="./LoginServlet">
   <div class="flex four contents">

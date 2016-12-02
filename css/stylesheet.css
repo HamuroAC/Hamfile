@@ -118,3 +118,7 @@ nav.imponent {
 input[type=submit]{
   font-family: FontAwesome;
 }
+.fa-navicon
+{
+  color: white;
+}

@@ -21,6 +21,10 @@
     <a href="index.html" class="brand">
       <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
     </a>
+    
+    <input id="bmenub" type="checkbox" class="show">
+    <label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
+    
     <div class="menu">
     <!--  HttpSession ses = req.setSession
       String id = String ses.GetAtteribute(string id)
