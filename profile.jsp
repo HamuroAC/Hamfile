@@ -26,7 +26,8 @@
       String id = String ses.GetAtteribute(string id)
       if(id==null){<!-セッション未実装のためコメントアウト--><!--
        <a href="login.jsp" class="button">ログイン</a>}else{-->
-       <a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> 編集</a><!--}-->
+       <a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a><!--}-->
+       <a href="setting.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
     </div>
   </nav>
   <!-- コンテンツ -->
