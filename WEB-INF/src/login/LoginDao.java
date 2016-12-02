@@ -16,7 +16,7 @@ public class LoginDao {
     private Connection con = null;
     private ResultSet rs = null;
 
-    private final String SQL_URL = "jdbc:mysql://localhost:3306/hamfile?autoReconnect=true&useSSL=false";
+    private final String SQL_URL = "jdbc:mysql://localhost:3306/teamA?autoReconnect=true&useSSL=false";
     private final String SQL_ID = "kunugi";
     private final String SQL_PASS = "hamuro";
 
