@@ -16,37 +16,43 @@
 </head>
 
 <body>
-  <!-- ナビゲーションバー -->
-  <nav class="demo imponent">
-    <a href="index.html" class="brand">
-      <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
-    </a>
-    
-    <input id="bmenub" type="checkbox" class="show">
-    <label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
-    
-    <div class="menu">
-    <!--  HttpSession ses = req.setSession
-      String id = String ses.GetAtteribute(string id)
-      if(id==null){<!-セッション未実装のためコメントアウト--><!--
-       <a href="login.jsp" class="button">ログイン</a>}else{-->
-       <a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a><!--}-->
-       <a href="setting.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
-    </div>
-  </nav>
-  <!-- コンテンツ -->
-  <div class="flex two contents_profile">
-    <span>
-        <img class="profile_img" src="img/person.png">
-    </span>
-    <span>
-      <div class="information">
-        <h4><i class="fa fa-user"></i> Name : 
-        <jsp:getProperty property="name" name="user_db"/></h4>
-      </div>
-    </span>
+
+<!-- ■ナビゲーションバー -->
+<nav class="demo imponent">
+  <a href="index.html" class="brand">
+    <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
+  </a>
+  <!-- レスポンシブメニュー -->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
+  <!-- メニュー項目 -->
+  <div class="menu">
+  <!--  HttpSession ses = req.setSession
+    String id = String ses.GetAtteribute(string id)
+    if(id==null){<!-セッション未実装のためコメントアウト--><!--
+     <a href="login.jsp" class="button">ログイン</a>}else{-->
+     <a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a><!--}-->
+     <a href="setting.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
   </div>
-  <!-- フッター -->
+</nav>
+
+<div class="flex two contents_profile">
+
+<!-- ■プロフィール画像 -->
+<span>
+  <img class="profile_img" src="img/person.png">
+</span>
+
+<!-- ■基本プロフィール -->
+<span>
+  <div class="information">
+    <h4><i class="fa fa-user"></i> Name : 
+    <jsp:getProperty property="name" name="user_db"/></h4>
+  </div>
+</span>
+
+</div>
+
 </body>
 
 </html>
