@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <jsp:useBean id="user_db" scope="session" class="login.LoginUserBean" />
-
 <!DOCTYPE html>
 <html lang="ja">
 

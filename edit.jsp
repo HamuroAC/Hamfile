@@ -32,7 +32,7 @@
 
 
 <form method="POST" enctype="multipart/form-data" action="./UploadServlet">
-<div class="flex two contents_profile">
+<div class="flex two contents">
 
 <!-- ■画像アップロード -->
 <span>
