@@ -16,7 +16,7 @@ public class Signup {
 		SignupUserBean bean = new SignupUserBean();
 		
 		// 引数のIDとパスワードを判定
-		if(id == null || id.equals("") || password == null || password.equals("")) {
+		if(id.equals("") || password.equals("")) {
 			bean.setId(id);
 			
 		} else {
