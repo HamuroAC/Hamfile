@@ -75,6 +75,9 @@ nav.imponent {
   top: 2.6em;
   height: 23em;
 }
+.login_button{
+  font-size: 1.5em;
+}
 /* --------------------profile-------------------- */
 .information {
   font-size: 2.5vw;        /*vw = view height*/
