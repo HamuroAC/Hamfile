@@ -6,46 +6,60 @@
   <title>Hamfile - Login</title>
   <link rel="stylesheet" href="css/picnic.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="script/script.js"></script>
   <scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
   <link rel="shortcut icon" href="img/Logoico.ico">
 </head>
 
 <body>
-  <!-- ナビゲーションバー -->
-  <nav class="demo imponent">
-    <a href="index.html" class="brand">
-      <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
-    </a>
-    <div class="menu">
-      <!-- メニューなし -->
-    </div>
-  </nav>
-  <!-- コンテンツ -->
-  <form method="POST" action="./LoginServlet">
-  <div class="flex four contents">
-   <span></span>
-    <span class="fl1 half">
-      <article class="card login_card">
-        <header><h3>ログイン</h3></header>
-        <section>
-         <form action="POST">
-          <h3>💌メールアドレス</h3>
-          <input name = "id" type="text" placeholder="yourmail@example.com">
-          <h3>🔑パスワード</h3>
-          <input name = "password" type="password" placeholder="Password">
-          <label class="checkbox_mg">
-            <input type="checkbox">
-            <span class="checkable">パスワードを記憶する</span>
-          </label>
-          <input name = "submit" type="submit" value="ログイン" class="full add_account_button">
-          </form>
-        </section>
-      </article>
-    </span>
-    <span></span>
+ 
+<!-- ■ナビゲーションバー -->
+<nav class="demo imponent">
+ <!-- ロゴ -->
+  <a href="index.html" class="brand">
+    <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
+  </a>
+  <!-- レスポンシブメニュー -->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
+  <!-- メニュー項目 -->
+  <div class="menu">
+    <a href="index.html" class="button"><i class="fa fa-share"></i> 戻る</a>
   </div>
-  </form>
+</nav>
+ 
+<!-- ■コンテンツ -->
+<form method="POST" action="./LoginServlet">
+<div class="flex four contents">
+
+<span><!-- 左余白なので記入禁止 --></span>
+
+<!-- ■ログインフォーム -->
+<span class="fl1 half">
+  <article class="card login_card">
+    <header><h3>ログインフォーム</h3></header>
+    <section>
+      <form action="POST">
+        <h3><i class="fa fa-envelope-o"></i> メールアドレス</h3>
+        <input name = "id" type="text" placeholder="yourmail@example.com">
+        <h3><i class="fa fa-lock"></i> パスワード</h3>
+        <input name = "password" type="password" placeholder="Password">
+        <label class="checkbox_mg">
+          <input type="checkbox">
+          <span class="checkable">パスワードを記憶する</span>
+        </label>
+        <input name = "submit" type="submit" value="&#xf090; ログイン" class="full add_account_button">
+      </form>
+    </section>
+  </article>
+</span>
+
+<span><!-- 右余白なので記入禁止 --></span>
+
+</div>
+</form>
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-/*■■■■■■■■■■■■■■■ 共通 ■■■■■■■■■■■■■■■*/
-body{
+/* ---------------------共通--------------------- */
+body {
   font-family: "メイリオ", sans-serif;
   padding: 10px;
   background-color: #F5F5F5;
@@ -9,15 +9,15 @@ nav.imponent {
   padding: 1em 0;
   font-size: 20px;
   box-shadow: 1px 1px 11px rgba(0,0,0,0.9);
-	background-color: #002767;
+  background-color: #002767;
 }
 
 .imponent .logo {
-	position: relative;
+  position: relative;
   height: 3em;
   font-size: 30px;
   transition: all 0.3s;
-	top: 5px;
+  top: 5px;
   color: white;
 }
 .logo:hover{
@@ -31,7 +31,7 @@ nav.imponent {
 
 .checkbox_mg {
   display: block;
-	margin: 1.5em 0em 1em 0em;
+  margin: 1.5em 0em 1em 0em;
 }
 .title_logo{
   position: relative;
@@ -39,45 +39,45 @@ nav.imponent {
   width: 70px;
 }
 
-/*■■■■■■■■■■■■■■■ index ■■■■■■■■■■■■■■■*/
+/* --------------------index-------------------- */
 .add_account_button
 {
   font-size: 1.5em;
 }
 .Description{
-	text-align: center;
+  text-align: center;
   width: 23%;
 }
 .desimg_center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .desimg {
-	position: relative;
-	width:auto;
-	height:auto;
-	max-width:500px;
-	max-height:500px;
+  position: relative;
+  width:auto;
+  height:auto;
+  max-width:500px;
+  max-height:500px;
 }
 .card_form{
-	position: relative;
-	top: 2.6em;
-	height: 25.2em;
-	margin: 0px 10px;
+  position: relative;
+  top: 2.6em;
+  height: 25.2em;
+  margin: 0px 10px;
 }
 .add_form_header3 {
-	margin: 13px 0px;
+  margin: 13px 0px;
 }
-/*■■■■■■■■■■■■■■■ login ■■■■■■■■■■■■■■■*/
+/* --------------------login---------------------- */
 .login_card {
-	position: relative;
-	top: 2.6em;
-	height: 23em;
+  position: relative;
+  top: 2.6em;
+  height: 23em;
 }
-/*■■■■■■■■■■■■■■■ profile ■■■■■■■■■■■■■■■*/
+/* --------------------profile-------------------- */
 .information {
-  font-size: 3vw;        /*vw = view height*/
+  font-size: 2.5vw;        /*vw = view height*/
 }
 .profile_img {
   display: block;
@@ -85,11 +85,10 @@ nav.imponent {
   margin: 0 auto;        /* Center horizontally */
   width: 60%;            /* 60% width */
 }
-
-/*■■■■■■■■■■■■■■■ edit ■■■■■■■■■■■■■■■*/
 .contents_profile{
-  margin-top: 4em;
+  margin-top: 7em;
 }
+/* --------------------edit---------------------- */
 .miniprofile {
   position: relative;
   border-radius: 50%;    /* Make it a circle */
@@ -110,6 +109,18 @@ nav.imponent {
 }
 .upload_pic_section{
 }
-/*■■■■■■■■■■■■■■■ privacy_policy ■■■■■■■■■■■■■■■*/
+/* --------------------privacy_policy-------------------- */
 .policy_card{
-  margin: 10px 100px;}
+  margin: 10px 100px;
+}
+/* --------------------Setting--------------------------- */
+.setting_menu{
+}
+/* --------------------Font Awesome---------------------- */
+input[type=submit]{
+  font-family: FontAwesome;
+}
+.fa-navicon
+{
+  color: white;
+}

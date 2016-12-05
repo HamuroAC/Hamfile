@@ -2,70 +2,77 @@
 <html lang="ja">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Hamfile - TOP</title>
-	<link rel="stylesheet" href="css/picnic.min.css">
-	<link rel="stylesheet" href="css/stylesheet.css">
-	<script type="text/javascript" src="script/script.js"></script>
-	<scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
-	<link rel="shortcut icon" href="img/Logoico.ico">
+  <meta charset="UTF-8">
+  <title>Hamfile - TOP</title>
+  <link rel="stylesheet" href="css/picnic.min.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="script/script.js"></script>
+  <scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
+  <link rel="shortcut icon" href="img/Logoico.ico">
 </head>
 
 <body>
 
-<!-- ナビゲーションバー -->
+<!-- ■ナビゲーションバー -->
 <nav class="demo imponent">
-	<a href="index.html" class="brand">
-		<span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
-	</a>
-	<div class="menu">
-		<a href="login.html" class="button">ログインはこちら</a>
-	</div>
+  <!-- ロゴ -->
+  <a href="index.html" class="brand">
+    <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
+  </a>
+  <!-- レスポンシブメニュー -->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
+  <!-- メニュー項目 -->
+  <div class="menu">
+    <a href="login.html" class="button"><i class="fa fa-sign-in"></i> ログイン</a>
+  </div>
 </nav>
 
 <div class="flex two contents">
 
-<!-- Hamfileの説明 -->
+<!-- ■Hamfileの説明スライドショー(前田絵) -->
 <span>
-	<div class="tabs four">
-		<input id="tabC-1" type='radio' name='tabGroupC' checked >
-		<input id="tabC-2" type='radio' name='tabGroupC'>
-		<input id="tabC-3" type='radio' name='tabGroupC'>
-		<input id="tabC-4" type='radio' name='tabGroupC'>
-		<div class='row desimg_center'>
-			<div><img class="desimg" src="img/ham_sample1.png"></div>
-			<div><img class="desimg" src="img/ham_sample2.png"></div>
-			<div><img class="desimg" src="img/ham_sample3.png"></div>
-			<div><img class="desimg" src="img/ham_sample4.png"></div>
-		</div>
-		<label for="tabC-1"><span class="pseudo button Description">1</span></label>
-		<label for="tabC-2"><span class="pseudo button Description">2</span></label>
-		<label for="tabC-3"><span class="pseudo button Description">3</span></label>
-		<label for="tabC-4"><span class="pseudo button Description">4</span></label>
-	</div>
+  <div class="tabs four">
+    <input id="tabC-1" type='radio' name='tabGroupC' checked >
+    <input id="tabC-2" type='radio' name='tabGroupC'>
+    <input id="tabC-3" type='radio' name='tabGroupC'>
+    <input id="tabC-4" type='radio' name='tabGroupC'>
+    <div class='row desimg_center'>
+      <div><img class="desimg" src="img/ham_sample1.png"></div>
+      <div><img class="desimg" src="img/ham_sample2.png"></div>
+      <div><img class="desimg" src="img/ham_sample3.png"></div>
+      <div><img class="desimg" src="img/ham_sample4.png"></div>
+    </div>
+    <label for="tabC-1"><span class="pseudo button Description">1</span></label>
+    <label for="tabC-2"><span class="pseudo button Description">2</span></label>
+    <label for="tabC-3"><span class="pseudo button Description">3</span></label>
+    <label for="tabC-4"><span class="pseudo button Description">4</span></label>
+  </div>
 </span>
 
-<!-- 登録フォーム -->
+<!-- ■アカウント登録フォーム -->
 <span>
-	<article class="card card_form" onSubmit="return check()">
-		<header><h3>登録フォーム</h3></header>
-		<section>
-		<form action="POST">
-			<h3 class="add_form_header3">💌メールアドレス</h3>
-			<input type="text" placeholder="yourmail@example.com">
-			<h3 class="add_form_header3">🔑パスワード</h3>
-			<input type="password" placeholder="Password">
-			<label class="checkbox_mg">
-				<input type="checkbox" id="p_checkbox" checked>
-				<span class="checkable"> <a href="privacy_policy.html">利用規約</a>に同意する</span>
-			</label>
-			<input class="full add_account_button" type="submit" value="アカウント作成">
-		</form>
-		</section>
-	</article>
+  <article class="card card_form" onSubmit="return check()">
+    <header><h3>登録フォーム</h3></header>
+    <section>
+      <form action="POST">
+        <h3 class="add_form_header3"><i class="fa fa-envelope-o"></i> メールアドレス</h3>
+        <input type="text" placeholder="yourmail@example.com">
+        <h3 class="add_form_header3"><i class="fa fa-lock"></i> パスワード</h3>
+        <input type="password" placeholder="Password">
+        <label class="checkbox_mg">
+          <input type="checkbox" id="p_checkbox" checked>
+          <span class="checkable"> <a href="privacy_policy.html">利用規約</a>に同意する</span>
+        </label>
+        <input class="full add_account_button" type="submit" value="&#xf234; アカウント作成">
+      </form>
+    </section>
+</article>
 </span>
 
 </div>
+
 </body>
 
 </html>

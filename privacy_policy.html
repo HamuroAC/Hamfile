@@ -6,6 +6,7 @@
 	<title>Hamfile - TOP</title>
 	<link rel="stylesheet" href="css/picnic.min.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="script/script.js"></script>
 	<scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
 	<link rel="shortcut icon" href="img/Logoico.ico">
@@ -13,19 +14,25 @@
 
 <body>
 
-<!-- ナビゲーションバー -->
+<!-- ■ナビゲーションバー -->
 <nav class="demo imponent">
-	<a href="index.html" class="brand">
-		<span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
-	</a>
-	<div class="menu">
-    <!-- メニューなし -->
-	</div>
+  <!-- ロゴ -->
+  <a href="index.html" class="brand">
+    <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
+  </a>
+  <!-- レスポンシブメニュー -->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
+  <!-- メニュー項目 -->
+   <div class="menu">
+    <a href="index.html" class="button"><i class="fa fa-share"></i> 戻る</a>
+  </div>
 </nav>
 
 <div class="flex one contents">
-  <span>
-   <article class="card policy_card">
+<!-- ■利用規約 -->
+<span>
+  <article class="card policy_card">
     <header>利用規約</header>
     <section>
       <p>この利用規約（以下，「本規約」といいます。）は，はむろの残留意思（以下，「当社」といいます。）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に従って，本サービスをご利用いただきます。</p>
@@ -92,7 +99,8 @@
       <br>
     </section>
   </article>
-  </span>
+</span>
+
 </div>
 </body>
 

@@ -1,0 +1,12 @@
+set names utf8;
+
+drop database if exists teamA;
+create database teamA;
+
+grant all privileges on teamA.* to kunugi@localhost identified by 'hamuro';
+use teamA;
+
+create table person(id char(32) primary key, password char(60), name char(32),imagepath char(255));
+
+insert into person(id, password, name)
+		values("HAMURO","GOD","REI HAMURO");
