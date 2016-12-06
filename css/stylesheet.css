@@ -127,3 +127,19 @@ input[type=submit]{
 {
   color: white;
 }
+/* ---------setting, setting_pass,delete_account--------- */
+.delete_button:hover
+{
+  background-color: #E73C32;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
