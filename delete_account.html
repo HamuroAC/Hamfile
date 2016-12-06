@@ -46,7 +46,15 @@
   <span class="three-fifth">
     <article class="card">
       <header><i class="fa fa-user-times"></i> アカウント削除</header>
-      <section></section>
+      <section>
+       <form action="#">
+        <h5 class="danger_message">操作を続行するにはパスワードを入力して下さい。<br>退会するとユーザー情報が削除され、復元することはできません。</h5>
+        <h4><i class="fa fa-key"></i> パスワード</h4>
+        <input name = "password" type="password" placeholder="Password">
+        <h3><!-- なにも記入しない --></h3>
+        <input class="full error" type="submit" value="&#xf235; アカウントを削除する">
+       </form>
+      </section>
     </article>
   </span>
 </div>

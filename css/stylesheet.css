@@ -133,7 +133,12 @@ input[type=submit]{
   background-color: #E73C32;
   color: white;
 }
-
+/* ------------------delete_account---------------------- */
+.danger_message{
+  background-color: rgba(255, 183, 183, 0.44);
+  padding: 10px;
+  border-radius: 10px;
+}
 
 
 
