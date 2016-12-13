@@ -19,7 +19,7 @@
 <!-- ■ナビゲーションバー -->
 <nav class="demo imponent">
   <a href="index.html" class="brand">
-    <span class="logo"><img class="title_logo" src="img/logo400.png" alt="logo">Hamfile</span>
+    <span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
   </a>
   <!-- レスポンシブメニュー -->
   <input id="bmenub" type="checkbox" class="show">
