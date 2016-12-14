@@ -40,7 +40,7 @@
     <header><h3><i class="fa fa-camera"></i> Upload New Picture</h3></header>
     <section class="upload_pic_section">
       <label class="dropimage miniprofile">
-        <input name="filea" title="Drop image or click me" type="file">
+        <input name="filea" accept="image/jpeg,image/png" title="Drop image or click me" type="file">
       </label>
     </section>
   </article>
