@@ -145,3 +145,19 @@ input[type=submit]{
 .test{
 	background-color: rgba(255, 255, 255, 0);
 }
+.test3{
+	height: 50px;
+	font-size: 1.5em;
+}
+.hitokoto {
+	height: 194px;
+}
+.imgbtn {
+	border: 1px solid black;
+}
+.imgbtn:hover {
+	border: 1px solid black;
+}
+.col_a {
+	width: 79%;
+}
