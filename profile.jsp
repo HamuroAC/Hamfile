@@ -32,6 +32,7 @@
      <a href="login.jsp" class="button">ログイン</a>}else{-->
      <a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a><!--}-->
      <a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
+     <a href="#" class="button"><i class="fa fa-sign-out"></i>ログアウト</a>
   </div>
 </nav>
 
