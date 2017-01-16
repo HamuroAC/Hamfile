@@ -12,15 +12,19 @@ public class LoginUserBean implements Serializable {
 
     private String id;
     private String name;
+    private String imagepath;
+    private String profile;
 
 
     public LoginUserBean() {
     }
 
 
-    public LoginUserBean(String id, String name) {
+    public LoginUserBean(String id, String name,String imagepath,String profile) {
         this.id = id;
         this.name = name;
+        this.imagepath = imagepath;
+        this.profile = profile;
     }
 
 
@@ -42,6 +46,23 @@ public class LoginUserBean implements Serializable {
     public String getName() {
        return this.name;
     }
+
+    public void setImagepath(String imagepath){
+         this.imagepath=imagepath;
+    }
+
+    public String getImagepath(){
+        return this.imagepath;
+    }
+
+    public void setProfile(String profile){
+        this.profile=profile;
+    }
+
+    public String getProfile(){
+        return this.profile;
+    }
+
 
 
 }
