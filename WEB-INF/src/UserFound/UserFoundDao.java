@@ -48,6 +48,9 @@ public class UserFoundDao {
             if(rs.next()){
                 bean.setId(rs.getString("id"));
                 bean.setName(rs.getString("name"));
+                bean.setImagepath(rs.getString("imagepath"));
+                bean.setProfile(rs.getString("profile"));
+                //System(tomcat)に出力
                 System.out.println("id=" + rs.getString("id") + ", name=" + rs.getString("name"));
             }
 
