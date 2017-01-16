@@ -35,7 +35,9 @@ public class LoginDao {
             con = DriverManager.getConnection(SQL_URL, SQL_ID, SQL_PASS);
 
             // SQLを生成
-            String sql = "SELECT name FROM person WHERE id = ? AND password = ?";
+            //String sql = "SELECT name FROM person WHERE id = ? AND password = ?";
+            //上記を元に追加された要素を持ってくるためのSQLに変更
+            String sql = "SELECT * FROM person WHERE id = ? AND password = ?";
             PreparedStatement ps = con.prepareStatement(sql);
 
             // ?を設定
