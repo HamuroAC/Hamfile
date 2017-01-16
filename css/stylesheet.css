@@ -95,6 +95,12 @@ nav.imponent {
 .contents_profile{
   margin-top: 7em;
 }
+.self-card{
+	background-color: rgba(255, 255, 255, 0);
+}
+.spacing{
+	letter-spacing: 3px;
+}
 /* --------------------edit---------------------- */
 .miniprofile {
   position: relative;
@@ -112,7 +118,6 @@ nav.imponent {
   margin: 0 auto;
 }
 .upload_pic_card{
-  height: 445px;
 }
 .upload_pic_section{
 }
