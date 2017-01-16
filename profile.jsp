@@ -53,6 +53,7 @@
 			<section id="self">
 				<p class="spacing">
 					<!-- ここに自己紹介が表示される。 -->
+					<jsp:getProperty propety="profile" name="user_db"/> 
 				</p>
 			</section>
 		</article>
