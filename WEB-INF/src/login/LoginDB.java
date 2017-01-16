@@ -6,9 +6,10 @@ import java.sql.SQLException;
 /**
  * ログイン処理クラス
  */
-public class LoginDB extends Login {
+public class LoginDB  {
 
-    public LoginUserBean getUserData(String id, String password) {
+    //public LoginUserBean getUserData(String id, String password) {
+        public LoginUserBean getUserData(String id, String password,String imagepath,String prrofile) {
 
         LoginUserBean bean = null;
         LoginDao dao = null;
