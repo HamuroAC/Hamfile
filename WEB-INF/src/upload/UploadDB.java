@@ -6,17 +6,18 @@ import login.LoginUserBean;
 
 public class UploadDB {
 
-    public LoginUserBean uploadUserData(String id, String name) 
+    public void uploadUserData(String id, String name,String imagepath,String profile,LoginUserBean user_db) 
     throws Exception {
 
-        LoginUserBean bean = null;
+        //LoginUserBean bean = null;
+       
         UploadDao dao = null;
 
         try {
 
             dao = new UploadDao();
             // DBを更新
-            dao.uploadUser(id, name);
+            dao.uploadUser(id, name,imagepath,profile);
 
         } catch (SQLException sqle) {
             sqle.printStackTrace();
@@ -27,11 +28,13 @@ public class UploadDB {
             }
         }
 
-                bean = new LoginUserBean();
                 // ID
-                bean.setId(id);
+                user_db.setId(id);
                 // 名前
-                bean.setName(name);
-        return bean;
+                user_db.setName(name);
+                //画像名
+                user_db.setImagepath(imagepath);
+                //自己紹介
+                user_db.setProfile(profile);
     }
 }
