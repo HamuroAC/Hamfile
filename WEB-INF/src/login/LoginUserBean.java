@@ -14,6 +14,7 @@ public class LoginUserBean implements Serializable {
     private String name;
     private String imagepath;
     private String profile;
+    private int loginflag = 0;
 
 
     public LoginUserBean() {
@@ -62,7 +63,12 @@ public class LoginUserBean implements Serializable {
     public String getProfile(){
         return this.profile;
     }
-
+    public void setLoginflag(int loginflag){
+        this.loginflag=loginflag;
+    }
+    public int getLoginflag(){
+        return this.loginflag;
+    }
 
 
 }
