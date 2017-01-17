@@ -35,7 +35,8 @@ public class LoginDB  {
                 bean.setImagepath(rs.getString("imagepath"));
                 //profileの本文を追加
                 bean.setProfile(rs.getString("profile"));
-                
+                //flagをたてる
+                bean.setLoginflag(1);
             }
         } catch (SQLException sqle) {
             sqle.printStackTrace();
