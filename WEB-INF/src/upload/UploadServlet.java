@@ -32,39 +32,44 @@ public class UploadServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
         RequestDispatcher rd;
-
-        String id = ((LoginUserBean) session.getAttribute("user_db")).getId();
+        LoginUserBean user_db = (LoginUserBean) session.getAttribute("user_db");
+        String id = user_db.getId();
 
         // 名前を取得
         String name = request.getParameter("name");
+        if(name == null || name.equals("")){
+            name = user_db.getName();
+        }
         // 画像を取得
         Part imagePart = request.getPart("filea");
-
+        //自己紹介文を取得
+        String profile = request.getParameter("profile");
+        if(profile == null || profile.equals("")){
+            profile = user_db.getProfile();
+        }
         // 画像なし対策
-        if (imagePart != null) {
+        String imageName=null;
+        if (imagePart.getSize() > 0) {
 
             // 画像の名前を取得
-            String imageName = imagePart.getSubmittedFileName();
-            String path = getServletContext().getRealPath("/profile");
+            imageName = imagePart.getSubmittedFileName();
+            String path = getServletContext().getRealPath("/profileimg");
 
             // 画像書き出し
             imagePart.write(path + "/" + imageName);
+            
+        } else{
+            imageName = user_db.getImagepath();
 
         }
 
         UploadDB db = new UploadDB();
         try {
-        LoginUserBean bean = db.uploadUserData(id, name);
-                // ログイン判定
-        if (bean != null) {
-            // ユーザー情報
-            session.setAttribute("user_db", bean);
-        }
+        db.uploadUserData(id, name,imageName,profile,user_db);
         } catch (Exception e) {
             e.printStackTrace();
         } 
 
-        // 商品結果画面に移動
         rd = request.getRequestDispatcher("./profile.jsp");
         rd.forward(request, response);
     }
