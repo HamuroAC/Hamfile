@@ -26,17 +26,30 @@
 			<label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
 			<!-- メニュー項目 -->
 			<div class="menu">
-				<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
-				<a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
-				<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
+				<%
+				if(user_db != null && user_db.getLoginflag()==1){
+				%>
+					<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
+					<a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
+					<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
+					<% 
+				}
+				%>
 			</div>
 		</nav>
 
 		<div class="flex two contents_profile">
 			<!-- ■プロフィール画像 -->
 			<span>
-		<img class="profile_img" src="img/ham_profile.png">
-	</span>
+			<% 
+				if(user_db !=null && user_db.getImagepath() != null){
+					out.println("<img class='profile_img' src='profileimg/" + user_db.getImagepath() + "'>");
+				} else {
+			%>
+				<img class="profile_img" src="img/ham_profile.png">
+			<% } %>
+			</span>
+
 			<!-- ■基本プロフィール -->
 			<span>
 		<div class="information">
