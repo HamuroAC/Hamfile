@@ -34,6 +34,7 @@ public class UploadServlet extends HttpServlet {
         RequestDispatcher rd;
         LoginUserBean user_db = (LoginUserBean) session.getAttribute("user_db");
         String id = user_db.getId();
+        System.out.println("UplordServlet:" + id);
 
         // 名前を取得
         String name = request.getParameter("name");
