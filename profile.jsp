@@ -67,7 +67,8 @@
     String LINE_SEPARATOR_PATTERN =  "\r\n|[\n\r\u2028\u2029\u0085]";
     Pattern pt = Pattern.compile(LINE_SEPARATOR_PATTERN);
     Matcher match = pt.matcher(s);
-    String result = match.replaceAll("<br>");
+    String stVal = match.replaceAll("<br>");
+		String result = stVal.replaceAll("(http://|https://){1}[\\w\\.\\-/:]+","<a href='$0'>$0</a>");
 %>
 					<!-- ■テキストエリア -->
 					<span class="full">
