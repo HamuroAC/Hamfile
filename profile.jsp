@@ -1,46 +1,47 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
-	<jsp:useBean id="user_db" scope="session" class="login.LoginUserBean" />
-	<!DOCTYPE html>
-	<html lang="ja">
+	<%@ page import="java.util.regex.*" %>
+		<jsp:useBean id="user_db" scope="session" class="login.LoginUserBean" />
+		<!DOCTYPE html>
+		<html lang="ja">
 
-	<head>
-		<meta charset="UTF-8">
-		<title>Hamfile - Profile</title>
-		<link rel="stylesheet" href="css/picnic.min.css">
-		<link rel="stylesheet" href="css/stylesheet.css">
-		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="script/script.js"></script>
-		<scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
-		<link rel="shortcut icon" href="img/Logoico.ico">
-	</head>
+		<head>
+			<meta charset="UTF-8">
+			<title>Hamfile - Profile</title>
+			<link rel="stylesheet" href="css/picnic.min.css">
+			<link rel="stylesheet" href="css/stylesheet.css">
+			<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+			<script type="text/javascript" src="script/script.js"></script>
+			<scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
+			<link rel="shortcut icon" href="img/Logoico.ico">
+		</head>
 
-	<body>
+		<body>
 
-		<!-- ■ナビゲーションバー -->
-		<nav class="demo imponent">
-			<a href="index.html" class="brand">
-				<span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
-			</a>
-			<!-- レスポンシブメニュー -->
-			<input id="bmenub" type="checkbox" class="show">
-			<label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
-			<!-- メニュー項目 -->
-			<div class="menu">
-				<%
+			<!-- ■ナビゲーションバー -->
+			<nav class="demo imponent">
+				<a href="index.html" class="brand">
+					<span class="logo"><img class="title_logo" src="img/Logo400.png" alt="logo">Hamfile</span>
+				</a>
+				<!-- レスポンシブメニュー -->
+				<input id="bmenub" type="checkbox" class="show">
+				<label for="bmenub" class="burger pseudo button"><i class="fa fa-navicon"></i></label>
+				<!-- メニュー項目 -->
+				<div class="menu">
+					<%
 				if(user_db != null && user_db.getLoginflag()==1){
 				%>
-					<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
-					<a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
-					<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
-					<% 
+						<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
+						<a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
+						<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
+						<% 
 				}
 				%>
-			</div>
-		</nav>
+				</div>
+			</nav>
 
-		<div class="flex two contents_profile">
-			<!-- ■プロフィール画像 -->
-			<span>
+			<div class="flex two contents_profile">
+				<!-- ■プロフィール画像 -->
+				<span>
 			<% 
 				if(user_db !=null && user_db.getImagepath() != null){
 					out.println("<img class='profile_img' src='profileimg/" + user_db.getImagepath() + "'>");
@@ -50,8 +51,8 @@
 			<% } %>
 			</span>
 
-			<!-- ■基本プロフィール -->
-			<span>
+				<!-- ■基本プロフィール -->
+				<span>
 		<div class="information">
 			<h4>
 				<i class="fa fa-user"></i> Name : 
@@ -59,20 +60,30 @@
 			</h4>
 		</div>
 	</span>
-			<!-- ■テキストエリア -->
-			<span class="full">
+				<%
+    String s = user_db.getProfile();
+    //s.replaceAll("\n\r", "<br>");
+    //s.replaceAll(System.getProperty("file.separator"), "<br>");
+    String LINE_SEPARATOR_PATTERN =  "\r\n|[\n\r\u2028\u2029\u0085]";
+    Pattern pt = Pattern.compile(LINE_SEPARATOR_PATTERN);
+    Matcher match = pt.matcher(s);
+    String result = match.replaceAll("<br>");
+%>
+					<!-- ■テキストエリア -->
+					<span class="full">
 		<article class="card self-card">
 			<header>自己紹介</header>
 			<section id="self">
 				<p class="spacing">
 					<!-- ここに自己紹介が表示される。 -->
-					<jsp:getProperty property="profile" name="user_db"/> 
+					<%= result %>
+				<!--	<jsp:getProperty property="profile" name="user_db"/> --> 
 				</p>
 			</section>
 		</article>
 	</span>
-		</div>
+			</div>
 
-	</body>
+		</body>
 
-	</html>
+		</html>
