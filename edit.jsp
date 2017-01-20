@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="script/script.js"></script>
-		<scirpt type="text/javascript" src="script/jquery-3.1.1.min.js"></scirpt>
+		<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="script/editform.js"></script>
 		<link rel="shortcut icon" href="img/Logoico.ico">
 	</head>
 
@@ -40,7 +41,7 @@
 		<header><h3><i class="fa fa-camera"></i> Upload New Picture</h3></header>
 		<section class="upload_pic_section">
 			<label class="dropimage miniprofile">
-				<input name="filea" accept="image/jpeg,image/png" title="Drop image or click me" type="file">
+				<input name="filea" accept="image/jpeg,image/png" title="Drop image or click me" type="file" id="editimg">
 			</label>
 		</section>
 	</article>
@@ -51,7 +52,7 @@
 	<article class="card">
 		<header><i class="fa fa-pencil-square-o"></i> 基本プロフィール</header>
 		<section>
-			<h4><i class="fa fa-user"></i> 名前<input name= "name" type="text" placeholder="Name"></h4>
+			<h4><i class="fa fa-user"></i> 名前<input name= "name" type="text" placeholder="Name" id="editname"></h4>
 		</section>
 	</article>
 </span>
@@ -70,12 +71,13 @@
 				<span>
 </span>
 				<span>
-	<input class="full add_profile_btn success" type="submit" value="&#xf046; 決定">
+	<input id="editsubmit" class="full add_profile_btn success" type="submit" value="&#xf046; 決定">
 </span>
 
-			</div>
-		</form>
+</div>
+</form>
+<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+<script src="script/script.js"></script>
+</body>
 
-	</body>
-
-	</html>
+</html>

@@ -31,13 +31,22 @@ function check() {
 	}
 }
 
-//slick
-$(document).ready(function () {
-	$('.desimg_center').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		arrows : false
+$(function(){
+	$('#editsubmit').on('click',function(){
+		var self = $('#self').val();
+		var editname = $('#editname').val();
+		var editimg = $('#editimg').val();
+		if(self.length == 0){
+			alert("自己紹介を入力してください。");
+			return false;
+		}else if(editname.length == 0){
+			alert("名前を入力してください。");
+			return false;
+		}else if(editimg.length == 0){
+			alert("画像を添付してください。");
+			return false;
+		}else{
+			return true;
+		};
 	});
 });
