@@ -36,7 +36,9 @@ public class LoginServlet extends HttpServlet {
             String password = request.getParameter("password");
             //imagepath profileを取得
             String imagepath =request.getParameter("imagepath");
+            System.out.println("Loginservlet:Line38:" + imagepath);
             String profile = request.getParameter("profile");
+            System.out.println("Loginservlet:Line41:" + profile);
 
             LoginDB logindb = new LoginDB();
 
