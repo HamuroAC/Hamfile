@@ -1,6 +1,7 @@
 <%@page contentType="text/html;charset=UTF-8"%>
 	<!DOCTYPE html>
 	<html lang="ja">
+	<jsp:useBean id="user_db" scope="session" class="login.LoginUserBean" />
 
 	<head>
 		<meta charset="UTF-8">
@@ -52,7 +53,8 @@
 	<article class="card">
 		<header><i class="fa fa-pencil-square-o"></i> 基本プロフィール</header>
 		<section>
-			<h4><i class="fa fa-user"></i> 名前<input name= "name" type="text" placeholder="Name" id="editname"></h4>
+			<h4><i class="fa fa-user"></i>名前<input name= "name" type="text" placeholder="Name" id="editname"value=<jsp:getProperty property="name" name="user_db"/>>
+			</h4>
 		</section>
 	</article>
 </span>
@@ -62,7 +64,7 @@
 <article class="card">
 	<header>自己紹介</header>
 	<section>
-		<textarea name="profile" id="self" cols="30" rows="10"></textarea>
+		<textarea name="profile" id="self" cols="30" rows="10"><jsp:getProperty property="profile" name="user_db"/></textarea>
 	</section>
 </article>
 </span>
@@ -74,10 +76,10 @@
 	<input id="editsubmit" class="full add_profile_btn success" type="submit" value="&#xf046; 決定">
 </span>
 
-</div>
-</form>
-<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
-<script src="script/script.js"></script>
-</body>
+			</div>
+		</form>
+		<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+		<script src="script/script.js"></script>
+	</body>
 
-</html>
+	</html>
