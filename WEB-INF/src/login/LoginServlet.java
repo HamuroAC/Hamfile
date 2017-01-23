@@ -34,12 +34,17 @@ public class LoginServlet extends HttpServlet {
             // IDとPASSWORDを取得
             String id = request.getParameter("id");
             String password = request.getParameter("password");
+            //imagepath profileを取得
+            String imagepath =request.getParameter("imagepath");
+            System.out.println("Loginservlet:Line38:" + imagepath);
+            String profile = request.getParameter("profile");
+            System.out.println("Loginservlet:Line41:" + profile);
 
             LoginDB logindb = new LoginDB();
 
             // ユーザ情報をモデルに格納
-            LoginUserBean bean = logindb.getUserData(id, password);
-
+            //LoginUserBean bean = logindb.getUserData(id, password);
+            LoginUserBean bean = logindb.getUserData(id, password,imagepath,profile);
              // ログイン判定
 
             if (bean != null) {

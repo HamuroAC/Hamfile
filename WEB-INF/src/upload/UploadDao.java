@@ -11,7 +11,7 @@ public class UploadDao{
     private final String SQL_ID = "kunugi";
     private final String SQL_PASS = "hamuro";
 
-    public void uploadUser(String id, String name) throws Exception{
+    public void uploadUser(String id, String name,String imagepath,String profile) throws Exception{
         try {
 
             // DBに接続
@@ -19,12 +19,15 @@ public class UploadDao{
             con = DriverManager.getConnection(SQL_URL, SQL_ID, SQL_PASS);
 
             // SQLを生成
-            String sql = "UPDATE person SET name = ? WHERE id = ?";
+            String sql = "UPDATE person SET name = ?,imagepath=?,profile=? WHERE id = ?";
             ps = con.prepareStatement(sql);
 
             // ?を設定
             ps.setString(1, name);
-            ps.setString(2, id);
+            ps.setString(2,imagepath);
+            ps.setString(3, profile);
+            ps.setString(4, id);
+
 
             // SQLを実行
             ps.executeUpdate();

@@ -22,6 +22,7 @@ public class SignupDB {
             if(result != 0) {
                 bean = new LoginUserBean();
                 bean.setId(id);
+                bean.setLoginflag(1);
             }
         } catch (SQLException sqle) {
             sqle.printStackTrace();

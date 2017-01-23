@@ -50,7 +50,7 @@ public class SignupServlet extends HttpServlet {
                     session.setAttribute("login_db", "login");
                     // セッション有効時間
                     session.setMaxInactiveInterval(180);
-                    rd = request.getRequestDispatcher("./edit.jsp");
+                    rd = request.getRequestDispatcher("./first_edit.jsp");
 
                 } else {
                     rd = request.getRequestDispatcher("./index.html");
