@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="css/picnic.min.css">
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="script/FirstScript.js"></script>
 		<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="script/editform.js"></script>
 		<link rel="shortcut icon" href="img/Logoico.ico">

@@ -30,7 +30,7 @@ function check() {
 		return false; // 送信中止
 	}
 }
-/*
+
 $(function(){
 	$('#editsubmit').on('click',function(){
 		var self = $('#self').val();
@@ -46,4 +46,3 @@ $(function(){
 		};
 	});
 });
-*/
