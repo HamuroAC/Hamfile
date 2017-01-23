@@ -31,7 +31,7 @@
 				if(user_db != null && user_db.getLoginflag()==1){
 				%>
 						<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
-						<a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a>
+						<!-- <a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a> -->
 						<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
 						<% 
 				}
