@@ -46,3 +46,19 @@ $(function(){
 		};
 	});
 });
+
+$(function(){
+	$('.add_account_button').on('click',function(){
+		var signupId = $('#signupId').val();
+		var signupPass = $('#signupPass').val();
+		if(signupId.length == 0){
+			alert("IDを入力してください。");
+			return false;
+		}else if(signupPass.length == 0){
+			alert("パスワードを入力してください。");
+			return false;
+		}else{
+			return true;
+		};
+	});
+});
