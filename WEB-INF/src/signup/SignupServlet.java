@@ -49,7 +49,7 @@ public class SignupServlet extends HttpServlet {
                     session.setAttribute("user_db", bean);
                     session.setAttribute("login_db", "login");
                     // セッション有効時間
-                    session.setMaxInactiveInterval(180);
+                    session.setMaxInactiveInterval(1000);
                     rd = request.getRequestDispatcher("./first_edit.jsp");
 
                 } else {
