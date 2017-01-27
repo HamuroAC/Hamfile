@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet {
                 // ログイン状態
                 session.setAttribute("login_db", "login");
                 // セッション有効時間
-                session.setMaxInactiveInterval(180);
+                session.setMaxInactiveInterval(1000);
 
                 rd = request.getRequestDispatcher("./profile.jsp");
 
