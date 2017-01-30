@@ -31,7 +31,7 @@
 					<%
 				if(user_db != null && user_db.getLoginflag()==1){
 				%>
-						 <button class="btn" id="foo" data-clipboard-target="#foo" data-clipboard-text="http://localhost:8080/Hamfile/profile/hujimoto" value="http://localhost:8080/Hamfile/profile/hujimoto"><i class="fa fa-copy"></i> クリップボードにコピー</button>
+						 <button class="btn" id="foo" data-clipboard-target="#foo" data-clipboard-text="http://localhost:8080/Hamfile/profile/FUJIMOTO" value="http://localhost:8080/Hamfile/profile/FUJIMOTO"><i class="fa fa-copy"></i> クリップボードにコピー</button>
 						<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
 						<!-- <a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a> -->
 						<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
