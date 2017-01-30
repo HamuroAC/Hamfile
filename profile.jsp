@@ -10,7 +10,6 @@
 			<link rel="stylesheet" href="css/picnic.min.css">
 			<link rel="stylesheet" href="css/stylesheet.css">
 			<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
 			<script type="text/javascript" src="script/script.js"></script>
 			<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
 			<link rel="shortcut icon" href="img/Logoico.ico">
@@ -31,7 +30,6 @@
 					<%
 				if(user_db != null && user_db.getLoginflag()==1){
 				%>
-						 <button class="btn" id="foo" data-clipboard-target="#foo" data-clipboard-text="http://localhost:8080/Hamfile/profile/FUJIMOTO" value="http://localhost:8080/Hamfile/profile/FUJIMOTO"><i class="fa fa-copy"></i> クリップボードにコピー</button>
 						<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
 						<!-- <a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a> -->
 						<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
@@ -86,9 +84,6 @@
 		</article>
 	</span>
 			</div>
-
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
-			<script type="text/javascript" src="script/script.js"></script>
 		</body>
 
 		</html>
