@@ -32,6 +32,7 @@ function check() {
 }
 
 $(function(){
+	var clipboard = new Clipboard('#foo');
 	$('#editsubmit').on('click',function(){
 		var self = $('#self').val();
 		var editname = $('#editname').val();
