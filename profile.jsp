@@ -33,7 +33,7 @@
 						<a href="edit.jsp" class="button"><i class="fa fa-pencil-square-o"></i> プロフィール編集</a>
 						<!-- <a href="setting_pass.html" class="button"><i class="fa fa-cog"></i> アカウント設定</a> -->
 						<a href="index.html " class="button" action="./LogoutServlet.java"><i class="fa fa-sign-out"></i>ログアウト</a>
-						<% 
+						<%
 				}
 				%>
 				</div>
@@ -42,7 +42,7 @@
 			<div class="flex two contents_profile">
 				<!-- ■プロフィール画像 -->
 				<span>
-			<% 
+			<%
 				if(user_db !=null && user_db.getImagepath() != null){
 					out.println("<img class='profile_img' src='profileimg/" + user_db.getImagepath() + "'>");
 				} else {
@@ -55,7 +55,7 @@
 				<span>
 		<div class="information">
 			<h4>
-				<i class="fa fa-user"></i> Name : 
+				<i class="fa fa-user"></i> Name :
 				<jsp:getProperty property="name" name="user_db"/>
 			</h4>
 		</div>
@@ -72,19 +72,18 @@
 %>
 					<!-- ■テキストエリア -->
 					<span class="full">
-		<article class="card self-card">
+		<article class="card self-card adoraku1">
 			<header>自己紹介</header>
 			<section id="self">
 				<p class="spacing">
 					<!-- ここに自己紹介が表示される。 -->
 					<%= result %>
-				<!--	<jsp:getProperty property="profile" name="user_db"/> --> 
+				<!--	<jsp:getProperty property="profile" name="user_db"/> -->
 				</p>
 			</section>
 		</article>
 	</span>
 			</div>
-
 		</body>
 
 		</html>

@@ -100,6 +100,7 @@ nav.imponent {
 }
 .spacing{
 	letter-spacing: 3px;
+  font-size:2em;
 }
 /* --------------------edit---------------------- */
 .miniprofile {
@@ -169,4 +170,8 @@ input[type=submit]{
 }
 .col_a {
 	width: 79%;
+}
+.adoraku1
+{
+  margin: 50px 50px 0px 50px;
 }
